@@ -3,7 +3,6 @@
         const htmlElement = document.documentElement;
         const lightIcon = document.querySelector('.light-icon');
         const darkIcon = document.querySelector('.dark-icon');
-
         function setTheme(theme) {
             if (theme === 'dark') {
                 htmlElement.setAttribute('data-theme', 'dark');
