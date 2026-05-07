@@ -1,8 +1,15 @@
 
+/* Color Theme Swatches in Hex */
+.Nonlinear-Film-Festival-Visual-Identity-1-hex { color: #A62D92; }
+.Nonlinear-Film-Festival-Visual-Identity-2-hex { color: #DC30F2; }
+.Nonlinear-Film-Festival-Visual-Identity-3-hex { color: #C530D9; }
+.Nonlinear-Film-Festival-Visual-Identity-4-hex { color: #8C8674; }
+.Nonlinear-Film-Festival-Visual-Identity-5-hex { color: #BF6D24; }
+
     :root {
         /* Light Theme */
-        --bg-color: #fafafa;
-        --text-color: #171717;
+        --bg-color: #ff0000;
+        --text-color:  #171717;
         --text-muted: #525252;
         --primary-color: #8b5cf6;
         --secondary-color: #0ea5e9;
@@ -768,3 +775,10 @@
     
     .max-w-2xl { max-width: 42rem; }
     .max-w-4xl { max-width: 56rem; }
+
+
+
+
+
+
+    https://perzhola.github.io/ProgettoTeamGithub/

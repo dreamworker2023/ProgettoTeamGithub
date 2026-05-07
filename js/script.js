@@ -21,7 +21,7 @@
         // Initialize Theme
         const savedTheme = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
+
         if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
             setTheme('dark');
         } else {
@@ -34,11 +34,11 @@
         });
 
         // Typing Effect Logic
-        const textToType = "Il Tuo Nome";
+        const textToType = "trenbolone gang";
         const typeWriterElement = document.getElementById('typewriter');
         let charIndex = 0;
         let isDeleting = false;
-        let typingDelay = 150;
+        let typingDelay = 30;
         const eraseDelay = 100;
         const newTextDelay = 2000;
 
@@ -66,21 +66,24 @@
         }
 
         // Start typing effect
-        setTimeout(type, 1000);
+        setTimeout(type, 800);
+
+
+
 
         // Smooth Scrolling for Nav Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 if (targetId === '#') return;
-                
+
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     targetElement.scrollIntoView({
                         behavior: 'smooth'
                     });
-                    
+
                     // Update active nav link
                     document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
                     this.classList.add('active');
@@ -101,7 +104,7 @@
                     entry.target.style.opacity = 1;
                     entry.target.style.transform = 'translateY(0)';
                     observer.unobserve(entry.target);
-                    
+
                     // Update active nav based on scroll position
                     if (entry.target.tagName.toLowerCase() === 'section') {
                         const id = entry.target.getAttribute('id');
